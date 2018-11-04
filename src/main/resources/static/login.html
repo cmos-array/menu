@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/container.css">
+    <script src="js/vue.js"></script>
+    <script src="js/chat/line.min.js"></script>
+    <script src="js/axios.min.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+    <form class="login-page" action="/login" method="post" v-if="logPageFlag" style="width: 360px;padding: 8% 0 0;margin: auto;">
+        <div class="form">
+            <h3>账户登录</h3>
+            <input type="text" placeholder="用户名" name="username" required="required"/>
+            <input type="password" placeholder="密码" name="password" required="required"/>
+            <p v-if="logmsgFlag" style="font-size: small;color: red;">{{ logmsg }}</p>
+            <button type="submit" style="margin: 2px;">登录</button>
+            <button type="button" v-on:click="register" style="margin: 2px;">注册</button>
+        </div>
+    </form>
+
+
+    <form class="login-page" v-if="regPageFlag" style="width: 360px;padding: 8% 0 0;margin: auto;">
+        <div class="form">
+            <h3>注册用户</h3>
+            <input type="text" v-model="form.userName" placeholder="用户名"/>
+            <input type="password" v-model="form.password" placeholder="密码"/>
+            <input type="password" v-model="form.checkpass" placeholder="密码确认"/>
+            <p v-if="regnullmsgFlag" style="font-size: small;color: red;">{{ nullmsg }}</p>
+            <p v-if="regmsgFlag" style="font-size: small;color: red;">{{ regmsg }}</p>
+            <button type="button" v-on:click="onSubmit" style="margin: 2px;">立即创建</button>
+            <button type="button" v-on:click="cancel" style="margin: 2px;">取消</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

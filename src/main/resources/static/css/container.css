@@ -1,0 +1,157 @@
+.el-header, .el-footer {
+    background-color: #E9EEF3;
+    color: #333;
+}
+
+.el-breadcrumb {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.el-aside {
+    background-color: #D3DCE6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
+}
+
+.el-main {
+    background-color: #FFFEFF;
+    color: #333;
+    text-align: left;
+}
+
+.ve-line{
+    position: relative;
+    top: 100px;
+    transform: translate(-50%,0);
+    left:50%;
+}
+
+body > .el-container {
+    margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+    line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+}
+
+.el-badge{
+    text-align:center;
+    border:2px solid #a1a1a1;
+    padding:10px 20px;
+    background:#dddddd;
+    width:150px;
+    border-radius:25px;
+    -moz-border-radius:25px; /* 老的 Firefox */
+}
+
+.router-link-active {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.demo-table-expand {
+    font-size: 0;
+}
+.demo-table-expand label {
+    width: 90px;
+    color: #99a9bf;
+}
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.list {
+    max-height: 85%;
+}
+
+.el-pagination{
+    position: relative;
+    top: 30px;
+}
+
+.el-col-2 {
+    text-align: center;
+}
+
+.el-rate {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.el-form-item__content {
+    height: 40px;
+}
+
+.el-form{
+    position: relative;
+    transform: translate(-50%,0);
+    left:50%;
+}
+
+.el-input-number__decrease {
+    height: 100%;
+}
+
+.el-input-number__increase {
+    height: 100%;
+}
+
+.el-icon-minus {
+    position: relative;
+    transform: translate(0,-50%);
+    top:50%;
+}
+
+.el-icon-plus {
+    position: relative;
+    transform: translate(0,-50%);
+    top:50%;
+}
+
+.el-switch {
+    height: 40px;
+}
+
+.time {
+    font-size: 13px;
+    color: #999;
+}
+
+.bottom {
+    margin-top: 13px;
+    line-height: 12px;
+}
+
+.button {
+    padding: 0;
+    float: right;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}

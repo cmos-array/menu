@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="stylesheet" href="icon/iconfont.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/vue.js"></script>
+    <script src="js/vue-router.js"></script>
+    <script src="js/chat/echarts.min.js"></script>
+    <script src="js/vue.pie.js"></script>
+    <script src="js/chat/line.min.js"></script>
+    <script src="js/element.js"></script>
+    <script src="icon/iconfont.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <el-collapse v-model="activeNames" @change="handleChange">
+        <el-collapse-item title="About" name="1">
+            <div>本项是目基于vue + element-ui 构建的后台管理系统</div>
+            <div>具有真实的注册、登陆、管理数据、权限验证等功能。</div>
+        </el-collapse-item>
+        <el-collapse-item title="说明" name="2">
+            <div>如果对您对此项目有兴趣，可点击 "Star" 或“Fork”本项目</div>
+            <div>如您在使用本项目中存在任何疑问，请于本项目页面留下评论或直接联系本人</div>
+            <div>本项目开发环境：</div>
+            <div>IntelliJ IDEA 2017.3.5 (Ultimate Edition)</div>
+            <div>Build #IU-173.4674.33, built on March 6, 2018</div>
+            <div>Licensed to idea</div>
+            <div>You have a perpetual fallback license for this version</div>
+            <div>Subscription is active until December 31, 2099</div>
+            <div>JRE: 1.8.0_152-release-1024-b15 amd64</div>
+            <div>JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o</div>
+            <div>Windows 7 6.1</div>
+        </el-collapse-item>
+        <el-collapse-item title="功能列表" name="3">
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 一致性 Consistency <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 登陆/注销 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 添加商铺 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 添加商品 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 数据展示 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 管理用户 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 管理商铺 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 食品管理 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 权限验证 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 管理员设置 <i class="header-icon el-icon-success"></i></div>
+            <div>    <i class="header-icon el-icon-arrow-right"></i> 图表 <i class="header-icon el-icon-success"></i></div>
+        </el-collapse-item>
+        <el-collapse-item title="联系作者" name="4">
+            <img src="img/code.png">
+        </el-collapse-item>
+    </el-collapse>
+</div>
+
+<script src="js/vue.pie.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

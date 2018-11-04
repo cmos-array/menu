@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/element.css">
+    <link rel="stylesheet" href="../static/icon/iconfont.css">
+    <link rel="stylesheet" href="../static/css/style.min.css">
+    <link rel="stylesheet" href="../static/css/container.css">
+    <script src="../static/js/vue.js"></script>
+    <script src="../static/js/chat/echarts.min.js"></script>
+    <script src="../static/js/chat/line.min.js"></script>
+    <script src="../static/js/element.js"></script>
+    <script src="../static/icon/iconfont.js"></script>
+</head>
+<body>
+
+<div id="chat">
+    <el-container>
+        <el-aside width="300px">
+            <el-row>
+                <el-col :span="12" style="width:300px;text-align:left">
+                    <el-menu  style="height:100%;" default-active="2" @open="handleOpen" @close="handleClose" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                        <root-menu indexid="1" title="title" iconname="iconfont icon-home" text="首页"></root-menu>
+                        <el-submenu index="2">
+                            <template slot="title">
+                                <i class="iconfont icon-file"></i>
+                                <span>数据管理</span>
+                            </template>
+                            <option-menu indexid="1-1" iconname="" text="用户列表"></option-menu>
+                            <option-menu indexid="1-2" iconname="" text="商家列表"></option-menu>
+                            <option-menu indexid="1-3" iconname="" text="食品列表"></option-menu>
+                            <option-menu indexid="1-4" iconname="" text="订单列表"></option-menu>
+                            <option-menu indexid="1-5" iconname="" text="管理员列表"></option-menu>
+                        </el-submenu>
+                        <el-submenu index="3">
+                            <template slot="title">
+                                <i class="iconfont icon-app"></i>
+                                <span>添加数据</span>
+                            </template>
+                            <option-menu indexid="2-1" iconname="" text="添加商铺"></option-menu>
+                            <option-menu indexid="2-2" iconname="" text="添加商品"></option-menu>
+                        </el-submenu>
+                        <root-menu indexid="4" title="title" iconname="iconfont icon-camera" text="图表"></root-menu>
+                        <root-menu indexid="5" title="title" iconname="iconfont icon-edit" text="编辑"></root-menu>
+                        <root-menu indexid="6" title="title" iconname="iconfont icon-sitting" text="设置"></root-menu>
+                        <root-menu indexid="7" title="title" iconname="iconfont icon-information" text="说明"></root-menu>
+                    </el-menu>
+                </el-col>
+            </el-row>
+        </el-aside>
+        <el-container>
+            <el-header>
+                <el-breadcrumb separator-class="el-icon-arrow-right">
+                    <el-breadcrumb-item :to="{ path: '/' }" >首页</el-breadcrumb-item>
+                    <el-breadcrumb-item>活动管理</el-breadcrumb-item>
+                    <el-breadcrumb-item>活动列表</el-breadcrumb-item>
+                    <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+                </el-breadcrumb>
+            </el-header>
+            <el-main>
+                <div style="margin:10px;">
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                </div>
+                <div style="margin:10px;">
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                    <el-badge>数据查询</el-badge>
+                </div>
+                <ve-line :data="chartData"  width="1400px"></ve-line>
+            </el-main>
+        </el-container>
+    </el-container>
+</div>
+
+<!-- https://vuejs.org/v2/guide/list.html#key -->
+<script src="../static/js/test.js"></script>
+</body>
+</html>
