@@ -19,7 +19,7 @@ JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
 Windows 7 6.1  
 
 # 技术栈  
-vue2 + vuex + vue-router + spring-boot + mysql + element-ui
+vue2 + vuex + vue-router + spring-boot + mysql + element-ui 
 
 # 功能列表  
 *  登陆/注销
